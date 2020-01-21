@@ -20,36 +20,14 @@ namespace keypad {
     //% pin6.fieldEditor="gridpicker" pin6.fieldOptions.columns=4
     //% pin7.fieldEditor="gridpicker" pin7.fieldOptions.columns=4
     export function setKeyPad3(pin1: DigitalPin, pin2: DigitalPin, pin3: DigitalPin, pin4: DigitalPin, pin5: DigitalPin, pin6: DigitalPin, pin7: DigitalPin): void {
-        rows[0] = pin1;
-        rows[1] = pin2;
-        rows[2] = pin3;
-        rows[3] = pin4;
-        columns[0] = pin5;
-        columns[1] = pin6;
-        columns[2] = pin7;
+        rows[0] = pin4;
+        rows[1] = pin5;
+        rows[2] = pin6;
+        rows[3] = pin7;
+        columns[0] = pin1;
+        columns[1] = pin2;
+        columns[2] = pin3;
         maxPins=3;
-    }
-
-    //% blockId=setKeyPad4 block="set 4*4 KeyPad pins : pin1 %pin1|pin2 %pin2|pin3 %pin3|pin4 %pin4|pin5 %pin5|pin6 %pin6|pin7 %pin7|pin8 %pin8" blockExternalInputs=false
-    //% weight=60
-    //% pin1.fieldEditor="gridpicker" pin1.fieldOptions.columns=4
-    //% pin2.fieldEditor="gridpicker" pin2.fieldOptions.columns=4
-    //% pin3.fieldEditor="gridpicker" pin3.fieldOptions.columns=4
-    //% pin4.fieldEditor="gridpicker" pin4.fieldOptions.columns=4
-    //% pin5.fieldEditor="gridpicker" pin5.fieldOptions.columns=4
-    //% pin6.fieldEditor="gridpicker" pin6.fieldOptions.columns=4
-    //% pin7.fieldEditor="gridpicker" pin7.fieldOptions.columns=4
-    //% pin8.fieldEditor="gridpicker" pin8.fieldOptions.columns=4
-    export function setKeyPad4(pin1: DigitalPin, pin2: DigitalPin, pin3: DigitalPin, pin4: DigitalPin, pin5: DigitalPin, pin6: DigitalPin, pin7: DigitalPin, pin8: DigitalPin): void {
-        rows[0] = pin1;
-        rows[1] = pin2;
-        rows[2] = pin3;
-        rows[3] = pin4;
-        columns[0] = pin5;
-        columns[1] = pin6;
-        columns[2] = pin7;
-        columns[3] = pin8;
-        maxPins=4;
     }
 
     //% blockId=getKeyString block="KeyPad value(string)"
