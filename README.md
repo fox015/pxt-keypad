@@ -1,4 +1,4 @@
-# Makecode PXT extension for BBC micro:bit
+# Makecode PXT keypad extension for BBC micro:bit
 
 Supports 3x4 keypads such as the [Adafruit 3x4 Phone-style Matrix Keypad](https://www.adafruit.com/product/1824).
 
@@ -6,7 +6,7 @@ Adapted from original pxt-keypad by Liou Zheng-Ji https://github.com/lioujj/pxt-
 
 ## Setup
 
-Use the "configure pins" block to set up rows and columns (see here for examples https://learn.adafruit.com/matrix-keypad/pinouts). You can also set the key debounce timeout.
+Use the "configure pins" block to set up rows and columns (see examples here: https://learn.adafruit.com/matrix-keypad/pinouts). You can also set the key debounce timeout.
 
 ## License
 
