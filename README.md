@@ -1,21 +1,12 @@
-# keypad
+# Makecode PXT extension for BBC micro:bit
 
-這是專為micro:bit提供的鍵盤積木\
-This is the KeyPad(3x4 and 4x4) blocks for micro:bit
+Supports 3x4 keypads such as the [Adafruit 3x4 Phone-style Matrix Keypad](https://www.adafruit.com/product/1824).
 
-## Author
-Liou Zheng-Ji\
-劉正吉\
-[my page, https://sites.google.com/jes.mlc.edu.tw/ljj/](https://sites.google.com/jes.mlc.edu.tw/ljj/)
+Adapted from original pxt-keypad by Liou Zheng-Ji https://github.com/lioujj/pxt-keypad
 
-## Circuit 3x4
-![image](images/keypad.jpg)
+## Setup
 
-## Video
-[![click here to see the sample video](https://img.youtube.com/vi/gc5u5fSmZOM/0.jpg)](https://www.youtube.com/watch?v=gc5u5fSmZOM)
-
-## Sample1 3x4 keypad
-![image](images/sample.jpg)
+Use the "configure pins" block to set up rows and columns (see here for examples https://learn.adafruit.com/matrix-keypad/pinouts). You can also set the key debounce timeout.
 
 ## License
 
@@ -27,5 +18,5 @@ Liou Zheng-Ji\
 (The metadata above is needed for package search.)
 
 ```package
-keypad=github:lioujj/pxt-keypad
+keypad=github:fox015/pxt-keypad
 ```
