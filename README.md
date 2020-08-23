@@ -2,11 +2,15 @@
 
 Supports 3x4 keypads such as the [Adafruit 3x4 Phone-style Matrix Keypad](https://www.adafruit.com/product/1824).
 
+![image](images/1824.jpg)
+
 Adapted from original pxt-keypad by Liou Zheng-Ji https://github.com/lioujj/pxt-keypad
 
 ## Setup
 
-Use the "configure pins" block to set up rows and columns (see examples here: https://learn.adafruit.com/matrix-keypad/pinouts). You can also set the key debounce timeout.
+Use the "configure pins" block to set up rows and columns (see examples here: https://learn.adafruit.com/matrix-keypad/pinouts).
+
+Use the "set debounce" block to set the key debounce timeout.
 
 ## License
 
