@@ -2,7 +2,6 @@
     "name": "pxt-keypad",
     "version": "1.0.0",
     "description": "Blocks to simplify using resistive keypads in MakeCode",
-    "icon": "./images/icon.png",
     "license": "MIT",
     "dependencies": {
         "core": "*"
