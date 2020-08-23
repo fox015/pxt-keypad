@@ -12,6 +12,58 @@ Use the "configure pins" block to set up rows and columns (see examples here: ht
 
 Use the "set debounce" block to set the key debounce timeout.
 
+## Example
+
+Below is a fairly simple program that uses the Kitronik :VIEW Text32 LCD screen:
+
+* Reads in the key from the keypad and assigns it to a variable
+* Appends the key to the end of the string to display
+* Displays the string on the LCD
+* Clears the display string when the "#" key is pressed
+
+The debounce block is optional as it defaults to 100ms internally. However you may tweak this to your liking.
+
+### Blocks:
+
+![image](images/blocks.png)
+
+### Typescript/Javascript:
+
+```ts
+let keyValue = ""
+let displayString = ""
+
+keypad.configurePins(
+  DigitalPin.P16,
+  DigitalPin.P0,
+  DigitalPin.P1,
+  DigitalPin.P2,
+  DigitalPin.P8,
+  DigitalPin.P12,
+  DigitalPin.P11
+  )
+keypad.setDebounceMs(80)
+
+Kitronik_VIEWTEXT32.clearDisplay()
+
+// Run main loop
+basic.forever(function () {
+    // Grab the key press from the keypad.
+    keyValue = keypad.getKeyString()
+
+    if (keyValue == "#") {
+        // Clear display if we press "#".
+        displayString = ""
+        Kitronik_VIEWTEXT32.clearDisplay()
+    } else {
+        // Otherwise, append the key to the display string, and output it to the LCD.
+        displayString = "" + displayString + keyValue
+        Kitronik_VIEWTEXT32.showString(displayString)
+    }
+})
+
+```
+
 ## License
 
 * MIT
